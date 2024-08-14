@@ -1,0 +1,204 @@
+################# STANDARD LICENSE ########################################
+#                                                                       #
+#   This file is a license for Cadence Design Systems, Inc. (Cadence).  #
+#   Any modifications to this file may invalidate the license.          #
+#                                                                       #
+#   Genentech                                                           #
+#   South San Francisco                                                 #
+#                                                                       #
+#   Tue Mar 12 18:52:01 2024                                            #
+#########################################################################
+#PRODUCT: afitt
+#EXP_DATE: 2025 04 28
+#FEATURES: beta
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 9612211dd248eef0aa1a4c3426bf4facd8c385d3b37bc5be59a50fcc8fbb391c
+#PRODUCT: bioisostere
+#EXP_DATE: 2025 04 28
+#FEATURES: python
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 1e36a82fa587e6a952113d972e42e60d13d7d53e1d09268ae223c8bef19d682b
+#PRODUCT: docking
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: cb688054a3cb441f888bbd3ef1627d7738ea1f7ad6216bcbbb188b5b78930a12
+#PRODUCT: eon
+#EXP_DATE: 2025 04 28
+#FEATURES: python
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 6ecd065e46b200b5dbcfeaa411a50d37d3ba1b3ab89120498c1d174a24b45b68
+#PRODUCT: fastrocs
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 855146f100059da3d32b40e1786675ecd7a04d762067d3fee0700cf1f909fdd4
+#PRODUCT: filter
+#EXP_DATE: 2025 04 28
+#FEATURES: toolkit;python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: b21e9c4f04fc44cd126d2f4f1882464edfa3874bec2528735edf4f87342a828e
+#PRODUCT: flynn
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: f3d0f5e6961d1d288faef7a08c3d15f37c2038bb1be5373b0bb8a34f754ecc59
+#PRODUCT: fred2
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 403d3d9c915080aa76c56dbc60524e022f96c41c9b995ff588484e7594f62b96
+#PRODUCT: grapheme
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 7affcdec9dc213ed36e7e80dc3500808d99788f644a67d8908fbd913e607a7c9
+#PRODUCT: graphsim
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 35935a8f3f23c2376e9ba4db165e4c1d70b4c50fd0096a7a8183b14ba7aad9d6
+#PRODUCT: iupac
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 5ae1db244b3fd8eccf7c9677ece4cb725ee26f0f4a02e7765a39b1998b7d00f8
+#PRODUCT: oechem
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: befa10809b8484198e884e20c2a868cd121d4b00c87b930a9fcca185798662bb
+#PRODUCT: oedepict
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 3df9c5711646300e8425b3d4bbe47c5d7554a2a11e0e0ab5f1b9af629cb1a36f
+#PRODUCT: oemedchem
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: d0915ff0e015364418201355a50380d767df6692bb6a258d78fc6678155bc6a5
+#PRODUCT: omega
+#EXP_DATE: 2025 04 28
+#FEATURES: gas-phase;toolkit;python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 67a55ed55a2225102324e0643afff6cfc85a2715ebc5d0e602b2ef1cf6ea48c5
+#PRODUCT: omega-db
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: c67c16be8f528119cfcc2a168737e21eec6d528850d4aa1d8dbc6c39b28883e0
+#PRODUCT: picto
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 1f6c68cdc5ec6e94374a6dbef713cbb49c84fee620588a9a7c82335ee56b928a
+#PRODUCT: pkadata
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 6eb25d31a926ec74b0e1cd6051984c3e8a5034934345737eb3f285061a7ec02e
+#PRODUCT: posit
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 62e1b82f8274920e2022d7a7a55d7d13dd47150fb5c66d96f55af67c39376115
+#PRODUCT: quacpac
+#EXP_DATE: 2025 04 28
+#FEATURES: beta;python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: ade1df7812ca608cb75f751f1d9d19939b5572e7bb27eb8446d327cfaf1e40c9
+#PRODUCT: rocs
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 5350a5b923bcc2a6a700bd8a15194013a7f52abbfebc6654543dcb45a5d04814
+#PRODUCT: shape
+#EXP_DATE: 2025 04 28
+#FEATURES: molecules;grids;python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 013eac0f813555f04c53945ff4288e3c741e975d4712886022adae594b4b9ab7
+#PRODUCT: sitehoppertk
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: b1ed471c76261366d33b77473eb16907ecf17f47102b9b2ed1b1c0a24847bd29
+#PRODUCT: sitehopper
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 2e497f9ac38dadeb05904f597501ece09a7c6b25673d53ccd70061fb5ef2915f
+#PRODUCT: spicoli
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: bc6598fb07e56008b03dcfb4f96af6b9ce31235e00d4c03ee131f3acbfd26122
+#PRODUCT: sprucetk
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 0fcfe29520be3ac09abf2154c349f8c42d646a14a09fea8c3c793fbaa22602a1
+#PRODUCT: spruce
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: d3e282f0a931d4f79850e8d3ab890ebc974b93a6f84459336fb755c1a24039a5
+#PRODUCT: szmap
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: bf29e92968238001835cb5c6c94c574b9072193b1050d76c16f118f4b34116e6
+#PRODUCT: szmaptk
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 326231754f4ab006d3dcef2426047648bc9ef83de0a17bcb0ad5f3e80ae416cd
+#PRODUCT: szybki
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 446f4c4a65970d3d8208ee81d5092e4cbc9b996cd3140db114ece886a6b035cd
+#PRODUCT: case
+#EXP_DATE: 2025 04 28
+#FEATURES: python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: f6813dbe5c86386609f06a6cf2bc7e27f7a2961efad475e3b06326526d9dc3f3
+#PRODUCT: vida
+#EXP_DATE: 2025 04 28
+#FEATURES: script line
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 3ea36976d45aa314826acc05ac9d361b7437d9b531cbff2cd26c0064ae5d3c3e
+#PRODUCT: vivant
+#EXP_DATE: 2025 04 28
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: 97f9ed47361d1bc899f09d357a43d214e45b35ef6e9754ca5c2ce7a46a16414b
+#PRODUCT: zap
+#EXP_DATE: 2025 04 28
+#FEATURES: basic toolkit;protein pka;perfect charge;python;java;clr
+#LICENSEE: Genentech
+#SITE: South San Francisco
+LICENSE_KEY: e854e5c62122fc82b4e321a68e02794403602e7b7106319742751761b5ebef3e
+
