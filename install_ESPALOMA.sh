@@ -36,25 +36,28 @@ source /home/ec2-user/SageMaker/.bashrc
 conda activate /home/ec2-user/SageMaker/envs/ESPALOMA
 
 # Step 9: Install Mamba in the new environment
-conda install -n base  mamba -y
+conda install -n base mamba -y
 
 # Step 10: Use Mamba to update the environment with the packages specified in the YAML file
 mamba env update -f espaloma_env.yml -p /home/ec2-user/SageMaker/envs/ESPALOMA
 
-# Step 11: Set the OpenEye license environment variable
+# Step 11: Update the mdtraj version by installing it with conda
+conda install -c coda-forge mdtraj==1.9.7 -y
+
+# Step 12: Set the OpenEye license environment variable
 export OE_LICENSE="/home/ec2-user/SageMaker/oe_license.txt"
 echo "Environment setup complete and OE_LICENSE set."
 
-# Step 12: Source the bashrc to ensure conda is available
+# Step 13: Source the bashrc to ensure conda is available
 source /home/ec2-user/SageMaker/.bashrc
 
-# Step 13: Activate the new environment
+# Step 14: Activate the new environment
 conda activate /home/ec2-user/SageMaker/envs/ESPALOMA
 
-# Step 14: Remove the espaloma_env.yml file
+# Step 15: Remove the espaloma_env.yml file
 rm -rf espaloma_env.yml
 
-# Step 15: Check if the required packages can be imported successfully
+# Step 16: Check if the required packages can be imported successfully
 python - <<EOF
 try:
     from openmm import MonteCarloBarostat, LangevinMiddleIntegrator, XmlSerializer
