@@ -51,7 +51,7 @@ python "$SEEKR2_DIR/prepare.py" input.xml
 
 # Run HIDR simulation with SEEKR2 using the explicitly set path
 echo "Running HIDR simulation..."
-python "$SEEKRTOOLS_DIR/seekrtools/hidr/hidr.py" any SEEKR_SIMULATION/model.xml -M metaD -p complex_SEEKR.pdb
+python "$SEEKRTOOLS_DIR/seekrtools/hidr/hidr.py" any SEEKR_SIMULATION/model.xml -M metaD -p complex_SEEKR.pdb -b 5
 
 echo "All commands executed successfully."
 
