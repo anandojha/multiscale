@@ -224,7 +224,7 @@ write_input_xml(
     nonbonded_cutoff=1.0,
     receptor_indices=adjusted_receptor_alpha_indices,
     ligand_indices_openMM=adjusted_ligand_indices,
-    radii=[0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0],
+    radii=[0.125, 0.2, 0.275, 0.35, 0.425, 0.5, 0.575, 0.65, 0.725, 0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0],
     system_filename=get_full_path(filename="complex_serialized.xml"),
     receptor_pqr_filename=get_full_path(filename="receptor.pqr"),
     ligand_pqr_filename=get_full_path(filename="ligand.pqr"),
