@@ -49,9 +49,15 @@ def extract_alpha_carbon_and_ligand_indices(protein_atoms, ligand_atoms, thresho
                 break  
     return close_c_alpha_atom_indices, ligand_atom_indices
 
+def adjust_alpha_carbon_indices(alpha_carbon_indices):
+    """Adjust alpha carbon indices by subtracting one and calculate the length."""
+    adjusted_indices = [index - 1 for index in alpha_carbon_indices]
+    length_of_indices = len(adjusted_indices)
+    return adjusted_indices, length_of_indices
+
 def adjust_ligand_indices(ligand_indices):
     """Adjust ligand indices by subtracting one and calculate the length."""
-    adjusted_indices = [index - 1 for index in ligand_indices]
+    adjusted_indices = [index - 2 for index in ligand_indices]
     length_of_indices = len(adjusted_indices)
     return adjusted_indices, length_of_indices
 
@@ -190,11 +196,14 @@ process_pdb(input_pdb="complex_minimized.pdb", output_pdb="receptor_ligand.pdb")
 protein_atoms, ligand_atoms = parse_pdb(filename='receptor_ligand.pdb')
 # Extracting receptor and ligand indices
 receptor_alpha_indices, ligand_indices = extract_alpha_carbon_and_ligand_indices(protein_atoms=protein_atoms,ligand_atoms=ligand_atoms, threshold=6.00)
+adjusted_receptor_alpha_indices, receptor_alpha_carbon_length = adjust_alpha_carbon_indices(receptor_alpha_indices)
+print("Receptor Alpha Carbon Indices:", receptor_alpha_indices)
+print("Receptor Alpha Carbon Indices for model.xml SEEKR input file:", adjusted_receptor_alpha_indices)
+print("Number of Receptor Alpha-Carbon Atoms:", receptor_alpha_carbon_length)
 adjusted_ligand_indices, ligand_length = adjust_ligand_indices(ligand_indices)
 browndye_ligand_list = create_sequential_ligand_list(ligand_length)
-print("Receptor Alpha Carbon Indices:", receptor_alpha_indices)
 print("Ligand Atom Indices:", ligand_indices)
-print("Ligand Atom Indices for model.xml SEEKR input:", adjusted_ligand_indices)
+print("Ligand Atom Indices for model.xml SEEKR input file:", adjusted_ligand_indices)
 print("Number of Ligand Atoms:", ligand_length)
 print("Browndye2 Ligand Indices:", browndye_ligand_list)
 
@@ -213,8 +222,8 @@ write_input_xml(
     hydrogenMass=1,
     timestep=0.002,
     nonbonded_cutoff=1.0,
-    receptor_indices=receptor_alpha_indices,
-    ligand_indices_openMM=ligand_indices,
+    receptor_indices=adjusted_receptor_alpha_indices,
+    ligand_indices_openMM=adjusted_ligand_indices,
     radii=[0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.7, 0.8, 0.9, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0],
     system_filename=get_full_path(filename="complex_serialized.xml"),
     receptor_pqr_filename=get_full_path(filename="receptor.pqr"),
@@ -224,3 +233,5 @@ write_input_xml(
     n_threads=12,
     comment_browndye_settings=True 
 )
+
+
