@@ -1,8 +1,12 @@
 #!/bin/bash
 
+# Export the OpenEye license
+export OE_LICENSE="/home/aojha/licenses/oe_license.txt"
+echo "OpenEye license has been exported."
+
 # Set explicit paths for SEEKR2 and SEEKRTOOLS directories
-SEEKR2_DIR="/home/aaojha/seekr2/seekr2"
-SEEKRTOOLS_DIR="/home/aaojha/seekrtools"
+SEEKR2_DIR="/home/aojha/seekr2"
+SEEKRTOOLS_DIR="/home/aojha/seekrtools"
 
 # Exit immediately if a command exits with a non-zero status
 set -e
@@ -47,11 +51,23 @@ echo "Using SEEKRTOOLS directory at: $SEEKRTOOLS_DIR"
 
 # Run SEEKR2 prepare step using the explicitly set path
 echo "Running SEEKR2 prepare.py..."
-python "$SEEKR2_DIR/prepare.py" input.xml
+python "$SEEKR2_DIR/seekr2/prepare.py" input.xml
 
 # Run HIDR simulation with SEEKR2 using the explicitly set path
 echo "Running HIDR simulation..."
 python "$SEEKRTOOLS_DIR/seekrtools/hidr/hidr.py" any SEEKR_SIMULATION/model.xml -M metaD -p complex_SEEKR.pdb -b 5
+
+# Create the sample_model.xml file by running create_sample_model.py
+echo "Creating sample_model.xml..."
+python create_sample_model.py
+
+# Run SEEKR2 simulation with sample_model.xml
+echo "Running SEEKR2 simulation with sample_model.xml..."
+python "$SEEKR2_DIR/seekr2/run.py" any SEEKR_SIMULATION/sample_model.xml
+
+# Delete the sample_model.xml file after the simulation
+echo "Deleting sample_model.xml..."
+rm SEEKR_SIMULATION/sample_model.xml
 
 echo "All commands executed successfully."
 

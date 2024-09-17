@@ -4,7 +4,7 @@ Create complex system with ESPALOMA.
  - ESPALOMA and AMBER FORCE FIELD are used to first parameterize the ligand and protein, respectively, to create the complex with solvation and ions.
  - The protein and the ligand from the solvated complex is then extracted and re-parameterized with ESPALOMA.
  - Note that the script works when the oe_license.txt is exported 
-export OE_LICENSE="/home/aaojha/oe_license.txt"
+export OE_LICENSE="/home/aojha/licenses/oe_license.txt"
 
 To install ESPALOMA:
 conda create -n ESPALOMA python=3.10 --y
@@ -23,6 +23,7 @@ import openmm.unit as unit
 import openmm.app as app
 from rdkit import Chem
 from tqdm import tqdm
+import numexpr as ne
 import mdtraj as md
 import numpy as np
 import warnings
@@ -32,11 +33,16 @@ import logging
 import shutil
 import os
 
+# Automatically set NumExpr to utilize all available cores
+num_cores = os.cpu_count()
+os.environ['NUMEXPR_MAX_THREADS'] = str(num_cores)
+print(f"NumExpr will use {num_cores} threads.")
+
 # Suppress all warnings to keep output clean
 warnings.filterwarnings("ignore")
 
 # Set up logging to record information in a file named 'parameterize.log'
-logging.basicConfig(filename='parameterize.log', level=logging.INFO)
+logging.basicConfig(filename='parameterize.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 _logger = logging.getLogger(__name__)
 _logger.setLevel(logging.INFO)
 
