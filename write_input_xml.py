@@ -195,7 +195,7 @@ process_pdb(input_pdb="complex_minimized.pdb", output_pdb="receptor_ligand.pdb")
 # Parsing the PDB file to get protein and ligand atoms
 protein_atoms, ligand_atoms = parse_pdb(filename='receptor_ligand.pdb')
 # Extracting receptor and ligand indices
-receptor_alpha_indices, ligand_indices = extract_alpha_carbon_and_ligand_indices(protein_atoms=protein_atoms,ligand_atoms=ligand_atoms, threshold=6.00)
+receptor_alpha_indices, ligand_indices = extract_alpha_carbon_and_ligand_indices(protein_atoms=protein_atoms,ligand_atoms=ligand_atoms, threshold=8.00)
 adjusted_receptor_alpha_indices, receptor_alpha_carbon_length = adjust_alpha_carbon_indices(receptor_alpha_indices)
 print("Receptor Alpha Carbon Indices:", receptor_alpha_indices)
 print("Receptor Alpha Carbon Indices for model.xml SEEKR input file:", adjusted_receptor_alpha_indices)
@@ -224,7 +224,7 @@ write_input_xml(
     nonbonded_cutoff=1.0,
     receptor_indices=adjusted_receptor_alpha_indices,
     ligand_indices_openMM=adjusted_ligand_indices,
-    radii=[0.125, 0.2, 0.275, 0.35, 0.425, 0.5, 0.575, 0.65, 0.725, 0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0],
+    radii=[0.25,0.325,0.45,0.525,0.6,0.7,0.8,0.9,1,1.1,1.2,1.4,1.6,1.8,2.0],
     system_filename=get_full_path(filename="complex_serialized.xml"),
     receptor_pqr_filename=get_full_path(filename="receptor.pqr"),
     ligand_pqr_filename=get_full_path(filename="ligand.pqr"),

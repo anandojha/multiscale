@@ -16,7 +16,7 @@ from openmm import unit
 import sys
 import os
 
-def minimization_simulation(pdb_file, system_xml, output_prefix, platform_name='CUDA', temperature=300, friction_coeff=1, time_step=0.002, max_minimize_steps=100000, md_steps=100000, report_interval=10000):
+def minimization_simulation(pdb_file, system_xml, output_prefix, platform_name='CUDA', temperature=300, friction_coeff=1, time_step=0.002, max_minimize_steps=1000000, md_steps=20000, report_interval=10000):
     """
     Run an OpenMM molecular dynamics simulation from a given PDB file and serialized system XML.
 
